@@ -51,7 +51,7 @@ class Solution:
                 tup = ()
                 dict[i]= tup
                 for j in range(num_players):
-                    dict[i] += (i// (num_actions**j) % num_actions,)
+                    dict[i] += (i// (num_actions**j) % num_players,)
                 dict[dict[i]] = i
                 return dict
             #type num: two integer values
