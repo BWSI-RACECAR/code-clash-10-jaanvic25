@@ -52,12 +52,12 @@ class Solution:
                 for j in range(num_players):
                     dict[i] += (i// (num_actions**j) % num_actions,)
                 dict[dict[i]] = i
-                return dict
+            return dict
             #type num: two integer values
             #return type: int dictionary
             
             #TODO: Write code below to return a dictionary with the solution to the prompt.
-            pass
+  
     
 def main():
     input1 = input()
