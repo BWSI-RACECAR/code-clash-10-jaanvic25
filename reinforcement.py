@@ -48,10 +48,9 @@ class Solution:
     def create_action_dict(self, num_players, num_actions):
             dict = {}
             for i in range((num_actions**num_players)):
-                tup = ()
-                dict[i]= tup
+                dict[i] = ()
                 for j in range(num_players):
-                    dict[i] += (i// (num_actions**j) % num_players,)
+                    dict[i] += (i// (num_actions**j) % num_actions,)
                 dict[dict[i]] = i
                 return dict
             #type num: two integer values
